@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html class="noJS">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!-- JS detection -->
+<script>(function (H) {
+  H.className = H.className.replace(/\bnoJS\b/, 'js')
+})(document.documentElement)</script>
+
+<title>[Client name]</title>
+
+<link rel="stylesheet" href="../../../css/screen.css">
+
+<!-- HTML5 shim: for screen and printing -->
+<!--[if lt IE 9]>
+<script src="../../../libs/script/html5shiv-printshiv.js"></script>
+<![endif]-->
+
+  <!-- Documentation CSS -->
+<link rel="stylesheet" href="../../../docs/doc.css">
+<!-- Syntax higlighting CSS-->
+<link rel="stylesheet" href="../../../libs/css/github.css">
+</head>
+
+<body>
+  <a href="#main" class="hideVisually focusable skipLink">Skip to content</a>
+<header class="header" role="banner">
+  <div class="container">
+    <h1 class="logo">OOCSS</h1>
+  </div>
+</header>
+
+<div class="docContent content">
+  <div class="docContainer container">
+    <div class="main docMain" role="main" id="main">
+      <div class="contentInner">
+        <div class="docSection">
+          <h2 id="form" class="docH2">Form</h2>
+
+<p>
+  Form component is composed with some components
+</p>
+
+<form class="form">
+  <h3>Form containers</h3>
+
+  <p>Forms need to have class <code>form</code>.</p>
+  <pre class="docCode"><code data-language="html">
+    <div class="form">...your form fields</div>
+  </code></pre>
+
+  <p>Each group form field is wrapped by <code>field</code>, usually consisting of a labek and a type of form field.</p>
+
+  <p>The form field is wrapped by class <code>fieldItem</code> plus the type of form field: <code>text</code>, <code>select</code>, <code>radio</code> and <code>checkbox</code>.</p>
+
+  
+
+  <ul class="listComponents">
+    
+      <li>
+        <h3>Input text</h3>
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  <div class="field">
+  <label for="text1" class="fieldLabel">Label with input</label>
+  <span class="fieldItem text">
+    <input type="text" id="text1">
+  </span>
+</div>
+  
+
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
+  &lt;label for=&quot;text1&quot; class=&quot;fieldLabel&quot;&gt;Label with input&lt;/label&gt;
+  &lt;span class=&quot;fieldItem text&quot;&gt;
+    &lt;input type=&quot;text&quot; id=&quot;text1&quot;&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+      </li>
+    
+      <li>
+        <h3>Select</h3>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  <div class="field">
+  <label for="select" class="fieldLabel">Label with select</label>
+  <span class="fieldItem select">
+    <select id="select">
+      <option value="">Any</option>
+      <option value="0">Option 0</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+    </select>
+  </span>
+</div>
+  
+
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
+  &lt;label for=&quot;select&quot; class=&quot;fieldLabel&quot;&gt;Label with select&lt;/label&gt;
+  &lt;span class=&quot;fieldItem select&quot;&gt;
+    &lt;select id=&quot;select&quot;&gt;
+      &lt;option value=&quot;&quot;&gt;Any&lt;/option&gt;
+      &lt;option value=&quot;0&quot;&gt;Option 0&lt;/option&gt;
+      &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+      &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+      </li>
+    
+      <li>
+        
+  
+
+
+
+
+
+
+
+
+<h3>Checkbox</h3>
+
+  
+  
+
+  <div class="field">
+  <span class="fieldItem checkbox">
+    <input type="checkbox" id="checkbox1-1" name="checkbox1">
+    <label for="checkbox1-1">Label for checkbox</label>
+  </span>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
+  &lt;span class=&quot;fieldItem checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox1-1&quot; name=&quot;checkbox1&quot;&gt;
+    &lt;label for=&quot;checkbox1-1&quot;&gt;Label for checkbox&lt;/label&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+
+<h3>Radio</h3>
+
+  
+  
+
+  <div class="field">
+  <span class="fieldItem radio">
+    <input type="radio" id="radio1-1" name="radio1">
+    <label for="radio1-1">Label for radio button</label>
+  </span>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
+  &lt;span class=&quot;fieldItem radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; id=&quot;radio1-1&quot; name=&quot;radio1&quot;&gt;
+    &lt;label for=&quot;radio1-1&quot;&gt;Label for radio button&lt;/label&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+
+      </li>
+    
+      <li>
+        <h3>Textarea</h3>
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  <div class="field">
+  <label for="textarea" class="fieldLabel">Label with textarea</label>
+  <span class="fieldItem text">
+    <textarea id="textarea" rows="4"></textarea>
+  </span>
+</div>
+  
+
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
+  &lt;label for=&quot;textarea&quot; class=&quot;fieldLabel&quot;&gt;Label with textarea&lt;/label&gt;
+  &lt;span class=&quot;fieldItem text&quot;&gt;
+    &lt;textarea id=&quot;textarea&quot; rows=&quot;4&quot;&gt;&lt;/textarea&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+      </li>
+    
+      <li>
+        <h4>Field Group</h4>
+<p>Use <code>fieldGroup</code> on <code>ul</code> if the list of form fields are related.</p>
+
+
+  
+
+
+
+
+
+
+
+
+
+<h5>List of radio buttons</h5>
+
+  
+  
+
+  <div class="field">
+  <label class="fieldLabel">Select your options</label>
+  <ul class="fieldGroup">
+    <li>
+      <span class="fieldItem radio">
+        <input type="radio" id="radiogroup20" name="radiogroup">
+        <label for="radiogroup20">Label for radio button</label>
+      </span>
+    </li>
+    <li>
+      <span class="fieldItem radio">
+        <input type="radio" id="radiogroup21" name="radiogroup">
+        <label for="radiogroup21">Label for radio button</label>
+      </span>
+    </li>
+  </ul>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;fieldLabel&quot;&gt;Select your options&lt;/label&gt;
+  &lt;ul class=&quot;fieldGroup&quot;&gt;
+    &lt;li&gt;
+      &lt;span class=&quot;fieldItem radio&quot;&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;radiogroup20&quot; name=&quot;radiogroup&quot;&gt;
+        &lt;label for=&quot;radiogroup20&quot;&gt;Label for radio button&lt;/label&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;span class=&quot;fieldItem radio&quot;&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;radiogroup21&quot; name=&quot;radiogroup&quot;&gt;
+        &lt;label for=&quot;radiogroup21&quot;&gt;Label for radio button&lt;/label&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+<h5>List of checkboxes</h5>
+
+  
+  
+
+  <div class="field">
+  <label class="fieldLabel">Select your option</label>
+  <ul class="fieldGroup">
+    <li>
+      <span class="fieldItem checkbox">
+        <input type="checkbox" id="checkboxgroup20" name="checkboxgroup">
+        <label for="checkboxgroup20">Label for checkbox</label>
+      </span>
+    </li>
+    <li>
+      <span class="fieldItem checkbox">
+        <input type="checkbox" id="checkboxgroup21" name="checkboxgroup">
+        <label for="checkboxgroup21">Label for checkbox</label>
+      </span>
+    </li>
+  </ul>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;fieldLabel&quot;&gt;Select your option&lt;/label&gt;
+  &lt;ul class=&quot;fieldGroup&quot;&gt;
+    &lt;li&gt;
+      &lt;span class=&quot;fieldItem checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;checkboxgroup20&quot; name=&quot;checkboxgroup&quot;&gt;
+        &lt;label for=&quot;checkboxgroup20&quot;&gt;Label for checkbox&lt;/label&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;span class=&quot;fieldItem checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;checkboxgroup21&quot; name=&quot;checkboxgroup&quot;&gt;
+        &lt;label for=&quot;checkboxgroup21&quot;&gt;Label for checkbox&lt;/label&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+<h5>List of inputs</h5>
+
+  
+  
+
+  <div class="field">
+  <label class="fieldLabel">Your email addresses</label>
+  <ul class="fieldGroup">
+    <li>
+      <label for="emailInputblock0">Email address 0</label>
+      <span class="fieldItem text">
+        <input type="text" id="emailInputblock0">
+      </span>
+    </li>
+    <li>
+      <label for="emailInputblock1">Email address 1</label>
+      <span class="fieldItem text">
+        <input type="text" id="emailInputblock1">
+      </span>
+    </li>
+  </ul>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;fieldLabel&quot;&gt;Your email addresses&lt;/label&gt;
+  &lt;ul class=&quot;fieldGroup&quot;&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;emailInputblock0&quot;&gt;Email address 0&lt;/label&gt;
+      &lt;span class=&quot;fieldItem text&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;emailInputblock0&quot;&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;emailInputblock1&quot;&gt;Email address 1&lt;/label&gt;
+      &lt;span class=&quot;fieldItem text&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;emailInputblock1&quot;&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+
+  
+  
+
+  <h5>List of selects</h5>
+<div class="field">
+  <label class="fieldLabel">Select your options</label>
+  <ul class="fieldGroup">
+    <li>
+      <label for="selectInputblock0">Option 0</label>
+      <span class="fieldItem select">
+        <select id="selectInputblock0">
+          <option value="">Any</option>
+          <option value="0">Option 0</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+      </span>
+    </li>
+    <li>
+      <label for="selectInputblock1">Option 1</label>
+      <span class="fieldItem select">
+        <select id="selectInputblock1">
+          <option value="">Any</option>
+          <option value="0">Option 0</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+      </span>
+    </li>
+  </ul>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;h5&gt;List of selects&lt;/h5&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;fieldLabel&quot;&gt;Select your options&lt;/label&gt;
+  &lt;ul class=&quot;fieldGroup&quot;&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;selectInputblock0&quot;&gt;Option 0&lt;/label&gt;
+      &lt;span class=&quot;fieldItem select&quot;&gt;
+        &lt;select id=&quot;selectInputblock0&quot;&gt;
+          &lt;option value=&quot;&quot;&gt;Any&lt;/option&gt;
+          &lt;option value=&quot;0&quot;&gt;Option 0&lt;/option&gt;
+          &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+          &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;label for=&quot;selectInputblock1&quot;&gt;Option 1&lt;/label&gt;
+      &lt;span class=&quot;fieldItem select&quot;&gt;
+        &lt;select id=&quot;selectInputblock1&quot;&gt;
+          &lt;option value=&quot;&quot;&gt;Any&lt;/option&gt;
+          &lt;option value=&quot;0&quot;&gt;Option 0&lt;/option&gt;
+          &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+          &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+
+      </li>
+    
+      <li>
+        <h4>Field Group Inline</h4>
+<p>Use <code>fieldGroupInline</code> on <code>ul</code> if the list of form fields are related and inline.</p>
+
+
+  
+
+
+
+
+
+
+  
+  
+
+  <h5>List of inline radio buttons</h5>
+<div class="field">
+  <label class="fieldLabel">Select your options</label>
+  <ul class="fieldGroup fieldGroupInline">
+    <li>
+      <span class="fieldItem radio">
+        <input type="radio" id="radiogroupinline0" name="radioinlinegroup">
+        <label for="radiogroupinline0">Label for radio button</label>
+      </span>
+    </li>
+    <li>
+      <span class="fieldItem radio">
+        <input type="radio" id="radiogroupinline1" name="radioinlinegroup">
+        <label for="radiogroupinline1">Label for radio button</label>
+      </span>
+    </li>
+  </ul>
+</div>
+  
+
+
+
+<h5>List of inline checkboxes</h5>
+
+  
+  
+
+  <div class="field">
+  <label class="fieldLabel">Select your options</label>
+  <ul class="fieldGroup fieldGroupInline">
+    <li>
+      <span class="fieldItem checkbox">
+        <input type="checkbox" id="radioblock0" name="checkboxinlinegroup">
+        <label for="radioblock0">Label for checkbox</label>
+      </span>
+    </li>
+    <li>
+      <span class="fieldItem checkbox">
+        <input type="checkbox" id="radioblock1" name="checkboxinlinegroup">
+        <label for="radioblock1">Label for checkbox</label>
+      </span>
+    </li>
+  </ul>
+</div>
+  
+
+
+
+<h5>List of inline text boxes</h5>
+
+  
+  
+
+  <div class="field">
+  <label class="fieldLabel">Your email address</label>
+  <ul class="fieldGroup fieldGroupInline">
+    <li>
+      <label for="textboxinline0">Email address 0</label>
+      <span class="fieldItem text">
+        <input type="text" id="textboxinline0">
+      </span>
+    </li>
+    <li>
+      <label for="textboxinline1">Email address 1</label>
+      <span class="fieldItem text">
+        <input type="text" id="textboxinline1">
+      </span>
+    </li>
+  </ul>
+</div>
+  
+
+
+
+      </li>
+    
+      <li>
+        <h5>Range</h5>
+<p>
+  Use <code>fieldRange</code> on <code>ul</code>
+  if you want to have form fields to indicate a range. Use grid column classes (<code>cols&lt;n&gt;of12</code>) to achieve different widths.
+</p>
+
+
+  
+
+
+
+
+
+  
+  
+
+  <div class="field">
+  <label for="range1" class="fieldLabel">Range inputs</label>
+  <ul class="fieldGroup fieldRange">
+    <li class="cols6of12">
+      <span class="fieldItem text">
+        <input type="text" id="range1">
+      </span>
+    </li>
+    <li class="rangeLabel">
+      <label for="range2">to</label>
+    </li>
+    <li class="cols6of12">
+      <span class="fieldItem text">
+        <input type="text" id="range2">
+      </span>
+    </li>
+  </ul>
+</div>
+  
+
+
+
+
+      </li>
+    
+  </ul>
+
+  
+
+  <h3>Layout</h3>
+  <h4>Columns</h4>
+
+  <p>You can use the grid to create column layouts within your form.</p>
+  
+  
+  
+
+  <div class="line">
+  <div class="col cols6of12">
+    <div class="field">
+      <label class="fieldLabel">Select your option set 1</label>
+      <ul class="fieldGroup">
+        <li>
+          <span class="fieldItem checkbox">
+            <input type="checkbox" id="checkboxgroupcol0" name="checkboxgroupcol">
+            <label for="checkboxgroupcol0">Label for checkbox</label>
+          </span>
+        </li>
+        <li>
+          <span class="fieldItem checkbox">
+            <input type="checkbox" id="checkboxgroupcol1" name="checkboxgroupcol">
+            <label for="checkboxgroupcol1">Label for checkbox</label>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col lastCol">
+    <div class="field">
+      <label class="fieldLabel">Select your option set 2</label>
+      <ul class="fieldGroup">
+        <li>
+          <span class="fieldItem checkbox">
+            <input type="checkbox" id="checkboxgroupcol20" name="checkboxgroupcol2">
+            <label for="checkboxgroupcol20">Label for checkbox</label>
+          </span>
+        </li>
+        <li>
+          <span class="fieldItem checkbox">
+            <input type="checkbox" id="checkboxgroupcol21" name="checkboxgroupcol2">
+            <label for="checkboxgroupcol21">Label for checkbox</label>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;line&quot;&gt;
+  &lt;div class=&quot;col cols6of12&quot;&gt;
+    &lt;div class=&quot;field&quot;&gt;
+      &lt;label class=&quot;fieldLabel&quot;&gt;Select your option set 1&lt;/label&gt;
+      &lt;ul class=&quot;fieldGroup&quot;&gt;
+        &lt;li&gt;
+          &lt;span class=&quot;fieldItem checkbox&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;checkboxgroupcol0&quot; name=&quot;checkboxgroupcol&quot;&gt;
+            &lt;label for=&quot;checkboxgroupcol0&quot;&gt;Label for checkbox&lt;/label&gt;
+          &lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;span class=&quot;fieldItem checkbox&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;checkboxgroupcol1&quot; name=&quot;checkboxgroupcol&quot;&gt;
+            &lt;label for=&quot;checkboxgroupcol1&quot;&gt;Label for checkbox&lt;/label&gt;
+          &lt;/span&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col lastCol&quot;&gt;
+    &lt;div class=&quot;field&quot;&gt;
+      &lt;label class=&quot;fieldLabel&quot;&gt;Select your option set 2&lt;/label&gt;
+      &lt;ul class=&quot;fieldGroup&quot;&gt;
+        &lt;li&gt;
+          &lt;span class=&quot;fieldItem checkbox&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;checkboxgroupcol20&quot; name=&quot;checkboxgroupcol2&quot;&gt;
+            &lt;label for=&quot;checkboxgroupcol20&quot;&gt;Label for checkbox&lt;/label&gt;
+          &lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;span class=&quot;fieldItem checkbox&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;checkboxgroupcol21&quot; name=&quot;checkboxgroupcol2&quot;&gt;
+            &lt;label for=&quot;checkboxgroupcol21&quot;&gt;Label for checkbox&lt;/label&gt;
+          &lt;/span&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+  <h4>Label on the left</h4>
+  <h5>Single field with label on left</h5>
+
+  <p>Add class <code>labelLeft</code> to <code>label</code>.</p>
+  
+  
+  
+
+  <div class="field">
+  <label for="singleLabelText1" class="labelLeft fieldLabel">Label on the left</label>
+  <span class="fieldItem text">
+    <input type="text" id="singleLabelText1">
+  </span>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
+  &lt;label for=&quot;singleLabelText1&quot; class=&quot;labelLeft fieldLabel&quot;&gt;Label on the left&lt;/label&gt;
+  &lt;span class=&quot;fieldItem text&quot;&gt;
+    &lt;input type=&quot;text&quot; id=&quot;singleLabelText1&quot;&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+  <h5>Multiple fields with label on left</h5>
+
+  <p>Add class <code>labelLeft</code> to parent container.</p>
+  
+  
+  
+
+  <div class="labelLeft">
+  <div class="field">
+    <label for="text111" class="fieldLabel">Label on the left</label>
+    <span class="fieldItem text">
+      <input type="text" id="text111">
+    </span>
+  </div>
+  <div class="field">
+    <label for="text222" class="fieldLabel">Label on the left</label>
+    <span class="fieldItem text">
+      <input type="text" id="text222">
+    </span>
+  </div>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;labelLeft&quot;&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label for=&quot;text111&quot; class=&quot;fieldLabel&quot;&gt;Label on the left&lt;/label&gt;
+    &lt;span class=&quot;fieldItem text&quot;&gt;
+      &lt;input type=&quot;text&quot; id=&quot;text111&quot;&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label for=&quot;text222&quot; class=&quot;fieldLabel&quot;&gt;Label on the left&lt;/label&gt;
+    &lt;span class=&quot;fieldItem text&quot;&gt;
+      &lt;input type=&quot;text&quot; id=&quot;text222&quot;&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+  
+
+  <h3>Sizing</h3>
+
+  <p>You can use <code>cols&lt;n&gt;of24</code> to give labels form fields different sizing</p>
+
+  
+  
+  
+
+  <div class="field">
+  <label for="text234" class="labelLeft">Label with input</label>
+  <span class="fieldItem text">
+    <input type="text" id="text234" class="cols6of24">
+  </span>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
+  &lt;label for=&quot;text234&quot; class=&quot;labelLeft&quot;&gt;Label with input&lt;/label&gt;
+  &lt;span class=&quot;fieldItem text&quot;&gt;
+    &lt;input type=&quot;text&quot; id=&quot;text234&quot; class=&quot;cols6of24&quot;&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+
+</form>
+        </div>
+      </div>
+    </div>
+    <!-- //main -->
+  </div>
+</div>
+<!-- //content -->
+
+  <footer class="footer" role="contentinfo">
+  <div class="container">
+    <p>Some text in the footer.</p>
+  </div>
+</footer>
+
+<script src="../../../libs/script/jquery-1.9.1.js"></script>
+
+
+
+
+</body>
+</html>
+
+

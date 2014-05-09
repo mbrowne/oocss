@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="noJS">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!-- JS detection -->
+<script>(function (H) {
+  H.className = H.className.replace(/\bnoJS\b/, 'js')
+})(document.documentElement)</script>
+
+<title>[Client name]</title>
+
+<link rel="stylesheet" href="../../../css/screen.css">
+
+<!-- HTML5 shim: for screen and printing -->
+<!--[if lt IE 9]>
+<script src="../../../libs/script/html5shiv-printshiv.js"></script>
+<![endif]-->
+
+  <!-- Documentation CSS -->
+<link rel="stylesheet" href="../../../docs/doc.css">
+<!-- Syntax higlighting CSS-->
+<link rel="stylesheet" href="../../../libs/css/github.css">
+</head>
+
+<body>
+  <a href="#main" class="hideVisually focusable skipLink">Skip to content</a>
+<header class="header" role="banner">
+  <div class="container">
+    <h1 class="logo">OOCSS</h1>
+  </div>
+</header>
+
+<div class="docContent content">
+  <div class="docContainer container">
+    <div class="main docMain" role="main" id="main">
+      <div class="contentInner">
+        <div class="docSection">
+          <h2 id="media" class="docH2">Media Block</h2>
+<p>Media blocks are used to layout images with related content.</p>
+
+<p>The media block is a UI pattern of an image to the left and some text (or really anything) that describes it to the right. The image can be any size. The media block has an optional right region which should also be fixed width.</p>
+
+<p>Use any sized image or flash for the right or left area. Any content in the body including nesting other media blocks. Always set image height and width to avoid unnecessary reflows/repaints.</p>
+
+<!--<p>Use any sized image or flash for the right or left area. Any content in the body including nesting other media blocks.</p>-->
+
+<div class="data codeTable">
+  <table>
+    <tr>
+      <th scope="row"><code>media</code></th>
+      <td>The wrapper class for the media block. Required.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>mediaBody</code></th>
+      <td>Wrapper of the content region of the media block. Any content or other UI objects, including other media blocks may be nested within the media body.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>mediaImg</code></th>
+      <td>Applied to an image or wrapper of the image (often a link), that you wish to align left. Optional.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>mediaImgExt</code></th>
+      <td>Applied to an image or wrapper of the image (often a link), that you wish to align right. Optional.</td>
+    </tr>
+  </table>
+</div>
+
+
+  
+  <div class="media">
+  <a href="http://twitter.com/stubbornella" class="mediaImg ">
+    <img src="http://placehold.it/21x21" width="21" height="21" alt="Left aligned image.">
+  </a>
+  <div class="mediaBody">
+    Simple text next to a small icon.
+  </div>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;media&quot;&gt;
+  &lt;a href=&quot;http://twitter.com/stubbornella&quot; class=&quot;mediaImg &quot;&gt;
+    &lt;img src=&quot;http://placehold.it/21x21&quot; width=&quot;21&quot; height=&quot;21&quot; alt=&quot;Left aligned image.&quot;&gt;
+  &lt;/a&gt;
+  &lt;div class=&quot;mediaBody&quot;&gt;Simple text next to a small icon.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+  
+    <h3>Right aligned media block</h3>
+  
+  <div class="media">
+  <a href="http://twitter.com/stubbornella" class="mediaImg mediaImgExt ">
+    <img src="http://placehold.it/21x21" width="21" height="21" alt="Right aligned image.">
+  </a>
+  <div class="mediaBody">
+    Media block with a right aligned image. Note that the media block expands to fill all the space available.
+  </div>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;media&quot;&gt;
+  &lt;a href=&quot;http://twitter.com/stubbornella&quot; class=&quot;mediaImg mediaImgExt &quot;&gt;
+    &lt;img src=&quot;http://placehold.it/21x21&quot; width=&quot;21&quot; height=&quot;21&quot; alt=&quot;Right aligned image.&quot;&gt;
+  &lt;/a&gt;
+  &lt;div class=&quot;mediaBody&quot;&gt;Media block with a right aligned image. Note that the media block expands to fill all the space available.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+  
+    <h3>Right and left aligned media block</h3>
+  
+  <div class="media">
+  <a href="http://twitter.com/stubbornella" class="mediaImg ">
+    <img src="http://placehold.it/64x64" width="64" height="64" alt="Right aligned image.">
+  </a>
+  <a href="http://twitter.com/stubbornella" class="mediaImg mediaImgExt ">
+    <img src="http://placehold.it/64x64" width="64" height="64" alt="Replace with good alt text">
+  </a>
+  <div class="mediaBody">
+    <p class='mtn'>This media block has an image aligned to the right via the <code>imgExt</code> class applied to the image wrapper. Images can be right, left, or both. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;media&quot;&gt;
+  &lt;a href=&quot;http://twitter.com/stubbornella&quot; class=&quot;mediaImg &quot;&gt;
+    &lt;img src=&quot;http://placehold.it/64x64&quot; width=&quot;64&quot; height=&quot;64&quot; alt=&quot;Right aligned image.&quot;&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;http://twitter.com/stubbornella&quot; class=&quot;mediaImg mediaImgExt &quot;&gt;
+    &lt;img src=&quot;http://placehold.it/64x64&quot; width=&quot;64&quot; height=&quot;64&quot; alt=&quot;Replace with good alt text&quot;&gt;
+  &lt;/a&gt;
+  &lt;div class=&quot;mediaBody&quot;&gt;
+    &lt;p class=&#x27;mtn&#x27;&gt;This media block has an image aligned to the right via the &lt;code&gt;imgExt&lt;/code&gt; class applied to the image
+      wrapper. Images can be right, left, or both. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+  
+    <h3>Nested media block</h3>
+  
+  <div class="media">
+  <a href="http://twitter.com/stubbornella" class="mediaImg ">
+    <img src="http://placehold.it/128x128" width="128" height="128" alt="">
+  </a>
+  <div class="mediaBody">
+    <p class='mtn'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class='media'> 
+        <a href='#' class='mediaImg mrs'><img src='http://placehold.it/21x21' alt='nested media block'></a>
+        <div class='mediaBody'>media blocks can be nested.</div>
+    </div>
+  </div>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;media&quot;&gt;
+  &lt;a href=&quot;http://twitter.com/stubbornella&quot; class=&quot;mediaImg &quot;&gt;
+    &lt;img src=&quot;http://placehold.it/128x128&quot; width=&quot;128&quot; height=&quot;128&quot; alt=&quot;&quot;&gt;
+  &lt;/a&gt;
+  &lt;div class=&quot;mediaBody&quot;&gt;
+    &lt;p class=&#x27;mtn&#x27;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+      eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.&lt;/p&gt;
+    &lt;div class=&#x27;media&#x27;&gt;
+      &lt;a href=&#x27;#&#x27; class=&#x27;mediaImg mrs&#x27;&gt;
+        &lt;img src=&#x27;http://placehold.it/21x21&#x27; alt=&#x27;nested media block&#x27;&gt;
+      &lt;/a&gt;
+      &lt;div class=&#x27;mediaBody&#x27;&gt;media blocks can be nested.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        </div>
+      </div>
+    </div>
+    <!-- //main -->
+  </div>
+</div>
+<!-- //content -->
+
+  <footer class="footer" role="contentinfo">
+  <div class="container">
+    <p>Some text in the footer.</p>
+  </div>
+</footer>
+
+<script src="../../../libs/script/jquery-1.9.1.js"></script>
+
+
+
+
+</body>
+</html>
+
+

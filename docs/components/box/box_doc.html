@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="noJS">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!-- JS detection -->
+<script>(function (H) {
+  H.className = H.className.replace(/\bnoJS\b/, 'js')
+})(document.documentElement)</script>
+
+<title>[Client name]</title>
+
+<link rel="stylesheet" href="../../../css/screen.css">
+
+<!-- HTML5 shim: for screen and printing -->
+<!--[if lt IE 9]>
+<script src="../../../libs/script/html5shiv-printshiv.js"></script>
+<![endif]-->
+
+  <!-- Documentation CSS -->
+<link rel="stylesheet" href="../../../docs/doc.css">
+<!-- Syntax higlighting CSS-->
+<link rel="stylesheet" href="../../../libs/css/github.css">
+</head>
+
+<body>
+  <a href="#main" class="hideVisually focusable skipLink">Skip to content</a>
+<header class="header" role="banner">
+  <div class="container">
+    <h1 class="logo">OOCSS</h1>
+  </div>
+</header>
+
+<div class="docContent content">
+  <div class="docContainer container">
+    <div class="main docMain" role="main" id="main">
+      <div class="contentInner">
+        <div class="docSection">
+          <h2 id="box" class="docH2">Boxes</h2>
+
+<p>
+  Boxes are a common way of grouping related content.
+  They consist of a wrapper with the class <code>box</code> applied.
+  Inside a box, there are three sections the header, body, and footer.
+  All boxes have a body, but some may not have either a header or footer.
+</p>
+
+<div class="data codeTable">
+  <table>
+    <tr>
+      <th scope="row"><code>box</code></th>
+      <td>Base class. Required. Skins and subclasses that extend box should add their classname to this element.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>boxHead</code></th>
+      <td>Subnode of box. Creates a box header which generally contains the box title and/or controls. Can be extended via skin classes. Optional.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>boxBody</code></th>
+      <td>Subnode of box. Creates the main content area of the box. Required. Any other types of objects may be placed inside the body of a box. A box does not control the display of it's content objects.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>boxFoot</code></th>
+      <td>Subnode of box. Creates the box footer. Any content can go in the footer including buttons, text, etc. Can be extended via a skin class. Optional.</td>
+    </tr>
+    
+      
+        <tr>
+          <th scope="row"><code>boxBasic backgroundBasic</code></th>
+          <td>this is a doc</td>
+        </tr>
+      
+    
+  </table>
+</div>
+
+<h3>Box Contours</h3>
+
+<p>Box contours are the outline of the box. You create different contours by extending the base class <code>.box</code>.</p>
+
+<ul class="listComponent">
+  
+    <li>
+      <div class="box boxBasic backgroundBasic">
+  <div class="boxBody">
+    <p>This box has a white background.</p>
+  </div>
+</div>
+      <pre class="docCode"><code data-language="html">&lt;div class=&quot;box boxBasic backgroundBasic&quot;&gt;
+  &lt;div class=&quot;boxBody&quot;&gt;
+    &lt;p&gt;This box has a white background.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </li>
+  
+</ul>
+
+        </div>
+      </div>
+    </div>
+    <!-- //main -->
+  </div>
+</div>
+<!-- //content -->
+
+  <footer class="footer" role="contentinfo">
+  <div class="container">
+    <p>Some text in the footer.</p>
+  </div>
+</footer>
+
+<script src="../../../libs/script/jquery-1.9.1.js"></script>
+
+
+
+
+</body>
+</html>
+
+
