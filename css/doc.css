@@ -8,11 +8,11 @@
 /* ==========================================================================
    Layout
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\0000313}}
+/* line 13, ../../src/components/doc.scss */
 #docNavTrigger {
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\0000316}}
+/* line 16, ../../src/components/doc.scss */
 #docNavTrigger button {
   padding: 5px 15px;
   background: #666;
@@ -21,26 +21,26 @@
   white-space: nowrap;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\0000325}}
+/* line 25, ../../src/components/doc.scss */
 #docNavWrapper {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\0000331}}
+/* line 31, ../../src/components/doc.scss */
 #docNav {
   overflow: auto;
   margin-bottom: 10px;
   margin-right: -15px;
   padding-right: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\0000337}}
+/* line 37, ../../src/components/doc.scss */
 #docNav li {
   margin-bottom: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\0000342}}
+/* line 42, ../../src/components/doc.scss */
 #docNavInner {
   display: none;
   padding: 5px 15px;
@@ -48,26 +48,26 @@
   border-radius: 4px 0 4px 4px;
   border: 1px solid #666;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\0000349}}
+/* line 49, ../../src/components/doc.scss */
 #docNavInner button {
   margin-bottom: 10px;
   display: table;
   margin: 5px auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\0000358}}
+/* line 58, ../../src/components/doc.scss */
 .docNavActive #docNavInner {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\0000364}}
+/* line 64, ../../src/components/doc.scss */
 .docNavFixed #docNavWrapperInner {
   position: fixed;
   top: 0;
   right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\0000371}}
+/* line 71, ../../src/components/doc.scss */
 .docNavFixed {
   z-index: 20;
   position: fixed;
@@ -78,7 +78,7 @@
 /* ==========================================================================
    Headings
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\0000383}}
+/* line 83, ../../src/components/doc.scss */
 .docH2 {
   margin-top: 0;
   margin-bottom: 20px;
@@ -86,7 +86,7 @@
   font-size: 34px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\0000391}}
+/* line 91, ../../src/components/doc.scss */
 .docSection {
   margin: 0 0 30px;
 }
@@ -94,28 +94,28 @@
 /* ==========================================================================
    Table
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\0000399}}
+/* line 99, ../../src/components/doc.scss */
 .codeTable {
   margin: 16px 0;
   border: 1px solid #eee;
   border-bottom: 0;
   border-radius: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\00003106}}
+/* line 106, ../../src/components/doc.scss */
 .codeTable table {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\00003110}}
+/* line 110, ../../src/components/doc.scss */
 .codeTable thead tr th:first-child {
   width: 20%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\00003115}}
+/* line 115, ../../src/components/doc.scss */
 .codeTable th,
 .codeTable td {
   padding: 10px 20px;
   border-bottom: 1px solid #eee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\00003122}}
+/* line 122, ../../src/components/doc.scss */
 .codeTable thead th,
 .codeTable td {
   border-left: 1px solid #eee;
@@ -125,13 +125,13 @@
    Grids
    ========================================================================== */
 /* shows grid lines and sizes in docs */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\00003132}}
+/* line 132, ../../src/components/doc.scss */
 .demo .line {
   margin-top: 21px;
   margin-bottom: 21px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\00003137}}
+/* line 137, ../../src/components/doc.scss */
 .demo .line > div:after {
   content: attr(class);
   display: block;
@@ -143,13 +143,13 @@
   font-size: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\00003149}}
+/* line 149, ../../src/components/doc.scss */
 .hideCode .docCode,
 .hideDesignNotes .docDesignNotes {
   display: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\00003153}}
+/* line 153, ../../src/components/doc.scss */
 .col > .code {
   margin-top: 0;
   margin-bottom: 0;
@@ -158,7 +158,7 @@
 /* ==========================================================================
    Swatch
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\00003162}}
+/* line 162, ../../src/components/doc.scss */
 .docSwatch {
   min-height: 218.25px;
   border: 1px solid #ccc;
@@ -167,7 +167,7 @@
 /* ==========================================================================
    Lists
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/htdocs\/oocss\/oocss\/src\/components\/doc\.scss}line{font-family:\00003171}}
+/* line 171, ../../src/components/doc.scss */
 .listDocContainer {
   padding: 10px;
 }

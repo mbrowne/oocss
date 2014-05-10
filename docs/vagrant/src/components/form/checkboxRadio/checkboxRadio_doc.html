@@ -47,6 +47,10 @@
 
 
 
+
+
+
+
 <h3>Checkbox</h3>
 
   
@@ -66,6 +70,30 @@
 &lt;/div&gt;</code></pre>
 
 
+<p>If the label for your checkbox spans multiple lines,
+or if you prefer not to nest your checkbox inside the label,
+use .hangingIndent:</p>
+
+
+  
+  
+
+  <div class="field">
+  <span class="fieldItem checkbox">
+    <input type="checkbox" id="checkbox1-1" name="checkbox1">
+    <label for="checkbox1-1" class="hangingIndent">Label for
+      <br>checkbox</label>
+  </span>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
+  &lt;span class=&quot;fieldItem checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox1-1&quot; name=&quot;checkbox1&quot;&gt;
+    &lt;label for=&quot;checkbox1-1&quot; class=&quot;hangingIndent&quot;&gt;Label for
+      &lt;br&gt;checkbox&lt;/label&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+
 <h3>Radio</h3>
 
   
@@ -73,14 +101,38 @@
 
   <div class="field">
   <span class="fieldItem radio">
+    <label>
+      <input type="radio" id="radio1-1" name="radio1">Label for radio button</label>
+  </span>
+</div>
+  <pre class="docCode"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
+  &lt;span class=&quot;fieldItem radio&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; id=&quot;radio1-1&quot; name=&quot;radio1&quot;&gt;Label for radio button&lt;/label&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+
+<p>If the label for your radio button spans multiple lines,
+or if you prefer not to nest your checkbox inside the label,
+use .hangingIndent:</p>
+
+
+  
+  
+
+  <div class="field">
+  <span class="fieldItem radio">
     <input type="radio" id="radio1-1" name="radio1">
-    <label for="radio1-1">Label for radio button</label>
+    <label for="radio1-1" class="hangingIndent">Label for
+      <br>radio button</label>
   </span>
 </div>
   <pre class="docCode"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
   &lt;span class=&quot;fieldItem radio&quot;&gt;
     &lt;input type=&quot;radio&quot; id=&quot;radio1-1&quot; name=&quot;radio1&quot;&gt;
-    &lt;label for=&quot;radio1-1&quot;&gt;Label for radio button&lt;/label&gt;
+    &lt;label for=&quot;radio1-1&quot; class=&quot;hangingIndent&quot;&gt;Label for
+      &lt;br&gt;radio button&lt;/label&gt;
   &lt;/span&gt;
 &lt;/div&gt;</code></pre>
 
